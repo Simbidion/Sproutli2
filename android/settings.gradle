@@ -1,0 +1,3 @@
+rootProject.name = 'Sproutli2'
+
+include ':app'
