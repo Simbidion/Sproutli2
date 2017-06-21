@@ -48,32 +48,33 @@ class App extends React.Component {
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
           )} >
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
+            <Listing />
         </Animated.ScrollView>
 
 
@@ -99,17 +100,14 @@ var styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    //overflow: 'hidden',
-//    alignItems: 'center',
-//    justifyContent: 'center',
-  //  height: HEADER_MAX_HEIGHT,
+    overflow: 'hidden',
   },
 
   scrollView: {
     flex: 1,
   //  marginTop: HEADER_MAX_HEIGHT,
     borderWidth: 2,
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
   },
 });
 

@@ -15,9 +15,10 @@ class Header extends React.Component {
     return(
       <View>
 
-        <Text style={styles.welcome}>
-          Sproutli 2.0, search (back to top), menu {'\n'} {'\n'}
+        <Text style={styles.header}>
+          Sproutli 2.0, search (back to top), menu {'\n'}
         </Text>
+
         <TextInput
           text={this.props.query}
           placeholder='Search'
@@ -28,9 +29,13 @@ class Header extends React.Component {
           onSubmitEditing={this.props.onSubmitEditing}
           autoFocus={false} //Was true in v1.0
          />
-        <Text style={styles.instructions}>
-          location{'\n'}
-        </Text>
+
+         <TextInput
+           placeholder='Place holder for GooglePlacesAutocomplete'
+           placeholderTextColor={COLOURS.GREY}
+           style={styles.search}
+           autoFocus={false}
+          />
 
         <VeganLevelSlider
           veganLevel={3}
@@ -44,16 +49,12 @@ class Header extends React.Component {
 
 
 var styles = StyleSheet.create({
-  welcome: {
+  header: {
     fontSize: 18,
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
   search: {
     height: 44,
     marginHorizontal: 8,
