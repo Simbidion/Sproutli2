@@ -7,18 +7,21 @@ import {
 } from 'react-native';
 
 
+import VeganLevelSlider from './VeganLevelSlider';
+
 class Header extends React.Component {
   render() {
     return(
       <View>
+
         <Text style={styles.welcome}>
           Sproutli2, search button (back to top), menu button {'\n'} {'\n'}
         </Text>
         <Text style={styles.instructions}>
           search{'\n'} {'\n'} {'\n'}
-          locaction{'\n'} {'\n'} {'\n'}
-          Slider {'\n'} {'\n'}
+          locaction{'\n'}
         </Text>
+        <VeganLevelSlider />
       </View>
     );
   }

@@ -76,6 +76,7 @@ class App extends React.Component {
           <Listing />
         </Animated.ScrollView>
 
+
         <Footer />
 
       </View>
