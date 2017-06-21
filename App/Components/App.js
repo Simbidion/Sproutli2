@@ -14,7 +14,7 @@ import Footer from './Footer';
 
 
 const HEADER_MAX_HEIGHT = 250;
-const HEADER_MIN_HEIGHT = 60;
+const HEADER_MIN_HEIGHT = 50;
 const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
 
     const headerTranslate = this.state.scrollY.interpolate({
-      inputRange: [0, 500],
+      inputRange: [0, 450],
       outputRange: [HEADER_MAX_HEIGHT, HEADER_MIN_HEIGHT],
       extrapolate: 'clamp',
     });

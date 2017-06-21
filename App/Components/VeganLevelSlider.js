@@ -31,16 +31,15 @@ class VeganLevelSlider extends React.Component{
           value={this.props.veganLevel}
           minimumValue={1}
           maximumValue={5}
-        />
+          />
 
-        <Text style={[styles.veganLevelText, {fontWeight: 'bold'}]}>Short Vegan Level</Text>
-        <Text style={styles.veganLevelText}>Looooooooooong Veeegaaan Leeeeeevvvveeeel</Text>
+        <Text style={[styles.veganLevelText, {fontWeight: 'bold'}]}>{veganLevel.short}</Text>
+        <Text style={styles.veganLevelText}>{veganLevel.long}</Text>
 
       </View>
     );
   }
-//{veganLevel.short}
-//{veganLevel.long}
+
 
   render() {
     return (
