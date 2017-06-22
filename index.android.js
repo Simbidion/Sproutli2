@@ -21,10 +21,8 @@ export default class Sproutli2 extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+  //  justifyContent: 'center',
     backgroundColor: '#F5FCFF',
-    borderColor: 'black',
-    borderWidth: 3,
   },
 });
 
